@@ -167,22 +167,17 @@ export class DataService {
         });
     }
     updateUsers(obj) {
-        for (var i = 0; i < this.serverData.length; i++) {
-            console.log("serverData", this.serverData.length);
-           // this.serverData[i].folder.push(obj);
-        }
-        // var urlparam = window.location.hash.split('/').slice(1);
-        // console.log("urlparammmm",urlparam);
-        // for (var i = 0; i < urlparam.length; i++) {
-        //     console.log("urlparammmm2",urlparam[i]);
-        //     var newObj = {
-        //         objname: this.serverData.filter(obj => obj.id == urlparam[i])[0].name,
-        //         objid: urlparam[i]
-        //     };
-        //     this.folder.push(newObj);
-        //    // this.currenturlid = this.currenturlid + '/' + urlparam[i];
-        //     this.serverData = this.serverData.filter(obj => obj.id == urlparam[i])[0].folder;
+        //  console.log("obj", obj);
+        // for (var i = 0; i < this.serverData.length; i++) {
+        //     console.log("obj", obj);
         // }
+        var urlparam = window.location.hash.split('/').slice(1);
+        console.log("urlparam", urlparam);
+        for (var i = 0; i < urlparam.length; i++) {
+            this.serverData.push(obj);
+            // this.displaydata = this.displaydata.filter(obj => obj.id == urlparam[i])[0].folder;
+        }
+
     }
 
 }

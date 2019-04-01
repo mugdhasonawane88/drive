@@ -31,7 +31,7 @@ export class HomeComponent implements OnInit {
   filesize: string;
   deleteItemIndexArr: any = [];
   _searchterm: string = '';
-
+  serverData: any= [];
   constructor(private data: DataService, private activatedRoute: ActivatedRoute, private route: ActivatedRoute) { }
 
   ngOnInit() {
@@ -68,9 +68,8 @@ export class HomeComponent implements OnInit {
       lastmodified: modifieddate,
       filesize: this.filesize
     }
-
     this.displaydata.push(updateObj);
-
+    this.serverData=this.displaydata;
     this.data.updateUsers(updateObj);
   }
 
@@ -91,7 +90,7 @@ export class HomeComponent implements OnInit {
       this.deleteItemIndexArr.push(deleteItemIndex);
       console.log("deleteItemIndexArr", this.deleteItemIndexArr);
     }
-    this.displaydata = this.displaydata.filter(obj => obj.id == this.deleteItemIndexArr.id)[0];    
+    this.displaydata = this.displaydata.filter(obj => obj.id == this.deleteItemIndexArr.id)[0];
   }
 
   onClickMe(userid, username) {
