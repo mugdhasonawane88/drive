@@ -1,0 +1,44 @@
+[
+{
+	"folderName"  : "Basic1",
+	"id" : 1,
+	"subFolders" : [{
+		"folderName" : "subfolder1",
+		"id": 12,
+		"subfolders" : [{
+			"folderName" : "subfolder2",
+		    "id": 12,
+			"files" : [
+				{
+					"fileName": "file1",
+					"id": "file1"
+				},
+				{
+					"fileName": "file2",
+					"id": "file2"
+				}
+			]
+		}]
+	}]	
+},
+{
+	"folderName"  : "Basic2",
+	"id" : 2,
+	"subFolders" : [{
+		"folderName" : "subfolder2",
+		"id": 123,
+		"subfolders" : [{
+		}]
+	}]
+},
+{
+	"folderName"  : "Basic3",
+	"id" : 2,
+	"subFolders" : [{
+		"folderName" : "subfolder3",
+		"id": 123,
+		"subfolders" : [{
+		}]
+	}]
+}
+]

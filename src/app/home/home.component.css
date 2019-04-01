@@ -1,0 +1,48 @@
+.margn-t-10{margin-top: 10px;}
+.margn-t-20{margin-top: 20px;}
+.margn-t-30{margin-top: 30px;}
+.margn-t-40{margin-top: 40px;}
+.margn-l-5{margin-left: 5px;}
+.margn-l-10{margin-left: 10px;}
+.margn-l-20{margin-left: 20px;}
+.margn-b-20{margin-bottom: 20px;}
+.home .folder{float: left;}
+.home .folder{float: left;}
+.drivetitle ul li{float: left;list-style-type: none;text-decoration: underline;}
+.drivetitle ul li a{color: #333; margin-left: 10px;font-weight: bold;}
+.drivetitle ul li a:hover{color:blue ; cursor: pointer;}
+
+.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+  }
+  
+  /* Style the submit button */
+ .example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+  }
+  
+.example button:hover {
+    background: #0b7dda;
+    cursor: pointer;
+  }
+  
+  /* Clear floats */
+.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
