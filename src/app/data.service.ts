@@ -161,23 +161,14 @@ export class DataService {
         }
     ];
 
-    getUsers() {
+    getFolders() {
         return new Observable(observer => {
             observer.next(this.serverData);
         });
     }
-    updateUsers(obj) {
-        //  console.log("obj", obj);
-        // for (var i = 0; i < this.serverData.length; i++) {
-        //     console.log("obj", obj);
-        // }
-        var urlparam = window.location.hash.split('/').slice(1);
-        console.log("urlparam", urlparam);
-        for (var i = 0; i < urlparam.length; i++) {
-            this.serverData.push(obj);
-            // this.displaydata = this.displaydata.filter(obj => obj.id == urlparam[i])[0].folder;
-        }
-
+    updateFolders(obj) {
+        console.log("obj", obj);
+        this.serverData = obj;
+        console.log("serverData", this.serverData);
     }
-
 }

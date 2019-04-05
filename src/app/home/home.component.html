@@ -1,6 +1,6 @@
 <div class="container home">
   <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margn-t-30 drivetitle">
-    <h4>Drive</h4>
+    <h4>Drive Demo</h4>
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margn-t-30 margn-b-20">
       <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
         <i class="fa fa-plus"></i>
@@ -51,7 +51,7 @@
       <div class="drivetitle col-lg-7 col-md-7 col-sm-12 col-xs-12">
         <ul>
           <li *ngFor="let foldername of folder;let i = index">
-            <a (click)="onClickLink(foldername.objname,foldername.objid,i)">{{foldername.objname}} > </a>
+            <a (click)="onFolderLinkClick(foldername.objname,foldername.objid,i)">{{foldername.objname}} > </a>
           </li>
         </ul>
       </div>
@@ -77,7 +77,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let user of displaydata" (dblclick)="onClickMe(user.id,user.name)">
+        <tr *ngFor="let user of displaydata" (dblclick)="onFolderClick(user.id,user.name)">
           <td>
             <div class="form-check">
               <input class="form-check-input position-static" type="checkbox" (click)="clickCheckbox(user.id)" id="userid" value="option1"
